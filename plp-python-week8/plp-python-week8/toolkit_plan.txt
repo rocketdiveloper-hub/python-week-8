@@ -1,0 +1,76 @@
+PERSONAL MINI-TOOLKIT - PLAN
+============================
+
+PART 1 & 2: THE TOOLS (one sentence each)
+-----------------------------------------
+1. To-Do List
+   Lets the user add tasks, remove tasks and show all tasks, and remembers
+   them for as long as the program is running.
+
+2. Number Guessing Game
+   The computer picks a secret number from 1 to 20 and the user has 5 tries
+   to guess it, getting "too low" or "too high" hints along the way.
+
+3. Simple Calculator
+   Asks for two numbers and an operation (+, -, *, /) and prints the answer,
+   politely refusing to divide by zero.
+
+4. Name Formatter
+   Takes a first and last name and shows it tidied up (capitalised), in
+   capital letters, as initials, and with the number of letters.
+
+PART 3: EXACT MENU TEXT
+-----------------------
+==============================
+   PERSONAL MINI-TOOLKIT
+==============================
+1. To-Do List
+2. Number Guessing Game
+3. Simple Calculator
+4. Name Formatter
+5. Quit
+
+Enter your choice (1-5):
+
+Welcome message (shown once at the start):
+   Welcome to your Personal Mini-Toolkit!
+
+Goodbye message (shown when the user picks Quit):
+   Thanks for using the toolkit. Goodbye!
+
+Invalid choice message:
+   Sorry, '<what they typed>' is not on the menu. Please enter a number from 1 to 5.
+
+PART 4: CONCEPTS USED BY EACH TOOL
+----------------------------------
+Main menu
+   - while loop that repeats until Quit
+   - if / elif / else to route the choice and catch invalid choices
+   - input(), print(), f-strings, .strip()
+
+1. To-Do List
+   - LIST (todo_list) that grows and shrinks: .append(), .remove()
+   - "in" check before removing so it never crashes
+   - a loop (inner menu loop + for loop to show the tasks)
+   - conditionals (add / remove / show / back)
+   - f-strings
+
+2. Number Guessing Game
+   - LOOP (while) that runs until the guess is right or tries run out
+   - CONDITIONALS: too low / too high / correct
+   - variables that change (attempts counter)
+   - random.randint() for the secret number
+   - .isdigit() so a typo doesn't crash the game
+   - f-strings
+
+3. Simple Calculator
+   - CONDITIONALS to pick the operation and catch division by zero
+   - type conversion with float()
+   - try / except so letters instead of numbers don't crash it
+   - f-strings
+
+4. Name Formatter
+   - CONDITIONAL to check that both names were entered
+   - string methods: .strip(), .title(), .upper(), len()
+   - indexing to build the initials
+   - f-strings
